@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수와 원자</title>
+    <script src="color.js"> </script>
+
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul> 
+    <script> //ul은 unorderedrh ol은 ordered//
+        function hi(){
+            document.write('<li>2-2</li>')
+            document.write('<li>2-3</li>')
+
+        }
+        document.write('<li>1</li>')
+         hi();
+        document.write('<li>1</li>')
+        hi();
+        </script>
+        </ul>
+  <h2> parameter and Argument </h2>
+  <input id="ntd" type="button" value="시야보호모드" onclick="
+  btn(this); "> 
+<script>
+    function opo(){
+        document.write(1+1+'<br>');
+    }
+        opo(); 
+        function sum(left,right){  //lefr,right 가 parameter//
+            document.write(left+right+'<br>');
+        }
+        sum(2,4);
+        sum(44,932);
+</script>
+
+<h2>return</h2>
+<script>
+    function sum2(left,right1){
+    return left+right1;
+    }
+    
+   document.write(sum(2,9)+'<br>');
+   document.write('<div style="color:red">'+sum2(4,5)+'</div>');
+    document.write('<div style="font-size:3rem">'+sum2(2,3)+'</div>');
+   
+</script>
+</ul>
+</body>
+</html>

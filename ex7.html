@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <script>
+        function setColor (color){
+         var alist = document.querySelectorAll('a');
+     var i = 0; 
+     while(i <  alist.length){
+     (alist[i]).style.color= color;
+     i = i+1; 
+        }
+        
+        }
+        
+         function btn (self){
+     var target = document.querySelector('body'); /* var target을 써서 원하는 코드 지정 가능*/
+     if(self.value==='시야보호모드'){  /*input 값을 다시 안 적고 this.value 사용하면 간단히 지정 가능*/
+     target.style.backgroundColor = 'black';
+    target.style.color = 'green';
+    document.querySelector('h1').style.color = 'green';
+    self.value='dlf상모드';
+         setColor('powderblue');
+     
+     }else{
+     document.querySelector('h1').style.color = 'black';
+     target.style.backgroundColor = 'white';
+     target.style.color = 'black';
+     self.value='시야보호모드';
+     setColor('yellowgreen');
+     }
+         }
+         
+     </script>
+</head>
+<body>
+   <ol>
+    <input id="ntd" type="button" value="시야보호모드" onclick="
+    btn(this); "> 
+    <script>
+        var i = 12;
+        while (i<13){
+            document.write("Hello this is the new World"+'</br>')
+            i= i+1;
+        }
+    </script>
+    <script>
+        
+         var i = 0;
+        document.write ('<li>1</li>');
+        while(i<9){
+            document.write ('<li>2</li>');
+            document.write ('<li>3</li>');
+        i = i+1;
+        }
+        document.write ('<li>4</li>');
+    </script></ol>
+</body>
+</html>
